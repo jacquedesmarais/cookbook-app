@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CookbookApp</title>
+    <title><%= CookbookApp %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -9,6 +9,16 @@
   </head>
 
   <body>
-    <%= yield %>
+      <h1><a href="/">All Recipes!</a></h1>
+      <p><a href="/recipes/new">New Recipe</a></p>
+      <div class="container">
+        <% flash.each do |name, message| %>
+          <div class="alert alert-<%= name %> alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <%= message %>
+          </div>
+        <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>

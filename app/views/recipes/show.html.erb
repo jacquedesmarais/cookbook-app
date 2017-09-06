@@ -4,4 +4,5 @@
 <h4>Ingredients: <%= @recipe.ingredients %></h4>
 <h4>Directions: <%= @recipe.directions %></h4>
 
-<a href=""></a>
+<%= link_to "Edit Recipe", "/recipes/#{ @recipe.id }/edit", class: "btn btn-warning" %>
+<%= link_to "Delete Recipe", "/recipes/#{ @recipe.id }", method: :delete, class: "btn btn-danger" %>
