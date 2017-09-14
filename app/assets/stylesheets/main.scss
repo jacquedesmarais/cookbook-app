@@ -1,19 +1,12 @@
-// $first-color: red;
-// $second-color: orange;
+// TYPEOGRAPHY
 
-// h1 {
-//   color: $first-color;
-// }
+body {
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  background-image: url('doodles.png');
+}
 
-// h2 {
-//   background-color: $first-color;
-// }
 
-// body {
-//   background-color: $second-color;
-// }
 
-// h3, h4 {
-//   background-color: white;
-//   color: $second-color;
-// }
+.well img {
+  width: 100%;
+}
